@@ -66,7 +66,7 @@ public class Main {
         // Read ecg file
         double[] egcSignal = PlotHelper.readEcg("ecg.txt");
 
-        // Create ecg time (Wir benutzen hier die Konstanten nicht, weil diese konstant nur einen festen Wert haben duerfen, richtig?)
+        // Create ecg time
         double[] ecgTime = createSamplingPoints(0, (double) egcSignal.length / SAMPLING_RATE, egcSignal.length);
 
         // Read peaks file
